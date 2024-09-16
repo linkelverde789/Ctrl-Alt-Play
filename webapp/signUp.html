@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro e Inicio de Sesión</title>
+    <link rel="stylesheet" href="estilos/normalize.css">
+
+    <link rel="stylesheet" href="estilos/access.css">
+</head>
+<body>
+<div class="formulario">
+    <h2>Registro </h2>
+    <form action="registroUsuario" method="post">
+        <div class="campo">
+            <label for="nombre">Nombre completo:</label>
+            <input type="text" id="nombre" name="nombre" minlength="3" maxlength="100" required>
+        </div>
+        <div class="campo">
+            <label for="usuario">Usuario:</label>
+            <input type="text" id="usuario" name="usuario" minlength="3" maxlength="50" required>
+        </div>
+        <div class="campo">
+            <label for="correo">Correo electrónico:</label>
+            <input type="email" id="correo" name="correo" minlength="3" maxlength="100" required>
+        </div>
+        <div class="campo">
+            <label for="contrasena">Contraseña:</label>
+            <input type="password" id="contrasena" name="contrasena" minlength="8" required>
+        </div>
+        <div class="campo">
+            <label for="rol">Rol:</label>
+            <select id="rol" name="rol" required>
+                <option value="1">Estandar</option>
+                <option value="2">Administrador</option>
+            </select>
+        </div>
+        <div class="boton">
+            <button type="submit">Registrarse</button>
+        </div>
+    </form>
+</div>
+<div class="manolo">
+    <img src="fotos/login.png" style="height: 300px; width: auto">
+</div>
+</body>
+</html>

@@ -1,0 +1,56 @@
+@import url('https://fonts.cdnfonts.com/css/monofonto');
+
+body {
+    font-family: 'Monofonto', sans-serif;
+    background-color: #1c4987;
+    margin: 0;
+    padding: 0;
+}
+
+.error {
+    background-color: #fff;
+    max-width: 700px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 5px;
+    border: solid 2px #fef265;
+    box-shadow: 0 0 15px rgb(254, 242, 101);
+    text-align: center;
+
+}
+
+.error h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+.enlace {
+    box-shadow: 0 0 15px rgb(254, 242, 101);
+    border-radius: 3px;
+    border: 3px solid #fef265;
+    max-width: 500px;
+    margin: 50px auto;
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+}
+
+.enlace a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.enlace a:hover {
+    text-decoration: underline;
+}
+
+.imagen{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 400px;
+    margin: 50px auto;
+    text-align: center;
+    padding: 20px;
+}

@@ -1,0 +1,184 @@
+@import url('https://fonts.cdnfonts.com/css/bonus-giant');
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("../fotos/pep.jpeg");
+    background-size: 200px;
+    color: #333;
+}
+.general {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 0px 0px 8px 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin: 0px auto;
+    padding: 20px;
+    height: 100%;
+    max-width: 70%;
+}
+.manolo{
+    display: flex;
+    flex-direction: column;
+}
+
+
+article {
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    width: 100%;
+    padding-bottom: 1.2em; /* Espacio para evitar solapamiento con scrollbar */
+}
+
+div {
+    margin: 0 20px 20px;
+    border-radius: 10px;
+}
+
+h1, h2 {
+    color: #26282e;
+    font-family: 'Bonus Giant', sans-serif;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 1.8em;
+    margin-top: 40px;
+    border-bottom: 2px solid #26282e;
+    padding-bottom: 10px;
+}
+
+p {
+    font-size: 1.2em;
+    margin-bottom:0px;
+}
+
+strong {
+    font-weight: bold;
+}
+
+div > div {
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 10px 0;
+}
+
+a {
+    text-decoration: none;
+    color: #26282e;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+div {
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+div img {
+    max-height: 250px;
+    margin: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+div img:hover {
+    border: 1px solid #777;
+}
+
+nav {
+    display: flex;
+    font-family: 'Bonus Giant', sans-serif;
+    font-size: large;
+    margin: -20px -20px 0;
+    border-radius: 0 0 8px 8px;
+    background-color: #16161d;
+    overflow: hidden;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+nav a {
+    font-weight: normal;
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: none;
+    background-color: #ddd;
+    color: black;
+}
+
+nav::after {
+    text-decoration: none;
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+@media screen and (min-width: 768px) {
+    div > div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    div > div > div {
+        flex: 1;
+        margin: 10px;
+    }
+    .manolo{
+        flex-direction: row;
+    }
+
+}
+@media(max-width:1000px) {
+    .general {
+        max-width: 100%;
+    }
+    div {
+        margin: 0 -10px 20px;
+        border-radius: 10px;
+    }
+    nav {
+        display: flex;
+        font-family: 'Bonus Giant', sans-serif;
+        font-size: large;
+        margin: -20px -20px 0;
+        border-radius: 0 0 8px 8px;
+        background-color: #16161d;
+        overflow: hidden;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+    }
+    body{
+        overflow-y: hidden;
+    }
+}

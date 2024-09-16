@@ -1,0 +1,152 @@
+@import url('https://fonts.cdnfonts.com/css/bonus-giant');
+
+body {
+    font-family: 'Bonus Giant', sans-serif;
+    font-size: large;
+    margin: 0;
+    padding: 0;
+    background-image: url("../fotos/formularioVideojuego.png");
+}
+
+h1 {
+    text-align: center;
+    margin-top: 40px;
+}
+
+div {
+    margin-top: 20px;
+}
+
+.general {
+    background-color: #fff;
+    border-radius: 0px 0px 8px 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin: 0px auto;
+    padding: 20px;
+    height: 100%;
+    max-width: 70%;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+textarea,
+select {
+    font-family: sans-serif;
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+textarea {
+    overflow: hidden;
+    resize: none;
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 3em;
+    max-height: 500px;
+}
+
+textarea:focus {
+    height: auto;
+}
+
+select[multiple] {
+    height: 200px;
+}
+
+.boton {
+    display: flex;
+    justify-content: center;
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #ed1c24;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 80%;
+}
+
+button[type="submit"]:hover {
+    background-color: #28b34b;
+}
+
+#previewImagenes,
+#previewGuias,
+#previewManuales {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+#previewImagenes img,
+#previewGuias img,
+#previewManuales img {
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+nav {
+    display: flex;
+    font-family: 'Bonus Giant', sans-serif;
+    font-size: large;
+    margin: -20px -20px 0;
+    border-radius: 0 0 8px 8px;
+    background-color: #16161d;
+    overflow: hidden;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+nav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+nav::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+@media (max-width: 1000px) {
+    body {
+        overflow-y: scroll;
+    }
+
+    .general {
+        max-width: 100%;
+    }
+
+    nav {
+        display: flex;
+        font-family: 'Bonus Giant', sans-serif;
+        font-size: large;
+        margin: -20px -20px 0;
+        border-radius: 0 0 8px 8px;
+        background-color: #16161d;
+        overflow: hidden;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+    }
+}
